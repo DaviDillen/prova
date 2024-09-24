@@ -2,11 +2,25 @@
 #include <stdlib.h>
 
 int main(){
-    double farenheit;
-    printf ("digite os graus em farenheit");
-    scanf ("%lf", &farenheit);
-    double celsius;
-    celsius = (farenheit - 32.0) * (5.0/9.0);
-    printf ("%lf", celsius);
-    return 0;
+    int celsius;
+    printf("insira a temperatura em graus celsius: ");
+    scanf("%i", &celsius);
+    if(celsius <= 0){
+        printf("geleira - Temperatura muito fria!");
+    }else{
+        if (1 < celsius <= 15);
+            printf ( "Frio");
+            if ( 16 < celsius <= 25){
+                printf("Agradável");
+            }else{
+                if (26 < celsius <= 35)
+                    printf("Quente");
+                     if (celsius <= 35){
+                        printf("Muito Quente");
+
+                    }
+
+                }
+
+            }
 }
