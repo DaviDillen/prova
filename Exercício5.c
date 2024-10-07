@@ -22,4 +22,22 @@ int main(){
         }
     }
 }
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int temperatura;
+    printf("digite a temperatura: ");
+    scanf("%i", &temperatura);
+    if (temperatura < -10){
+        printf ("risco baixo");
+    } else if (temperatura <= 0){
+        printf ("risco moderado");
+    } else if (temperatura <= 10){
+        printf ("risco elevado");
+    } else {
+        printf ("risco crítico");
+    }
+
+}
 
